@@ -10,3 +10,6 @@ This repository contains a set of example Apache Airflow DAGs designed to teach 
 
 - **basic_dag04.py**  
   Demonstrates a select database query (`SELECT COUNT(*)`) and an insert task using AirFlow connections and the decorator style.
+
+- **basic_dag04_xcom_demo.py**  
+  Shows how to fetch rows from Azure SQL, serialize them to JSON-friendly dicts, and pass them between tasks via XCom.
