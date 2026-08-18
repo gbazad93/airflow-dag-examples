@@ -11,7 +11,7 @@ db.connection.session_scope(), so nothing sensitive lives in this file.
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 from airflow.decorators import dag, task
 from sqlalchemy import text
@@ -53,7 +53,7 @@ def basic_dag04() -> None:
                 {
                     "source_table": SOURCE_TABLE,
                     "row_count": row_count,
-                    "checked_at": datetime.utcnow(),
+                    "checked_at": datetime.now(timezone.utc),
                 },
             )
 
