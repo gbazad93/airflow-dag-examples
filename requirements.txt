@@ -1,0 +1,8 @@
+# Runtime requirements for the tutorial DAGs.
+# Airflow itself should be installed with the official constraints file, e.g.
+#   pip install "apache-airflow==2.9.3" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.3/constraints-3.11.txt"
+
+apache-airflow>=2.7,<3.0
+apache-airflow-providers-microsoft-mssql>=3.4
+SQLAlchemy>=1.4
+pyodbc>=5.0
